@@ -13,6 +13,8 @@ const ProfileForm = () => {
     firstName: '',
     middleName: '',
     lastName: '',
+    email: '',
+    phonenumber: '',
     address: '',
     country: '',
     state: '',
@@ -158,6 +160,28 @@ const ProfileForm = () => {
             required
           />
         </div>
+        <div className="form-group">
+          <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+        </div>
+
+        <div className="form-group">
+          <label>Phone Number</label>
+          <input
+            type="tel"
+            name="phonenumber"
+            value={formData.phonenumber}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
         <div className="form-group">
           <label>Address</label>
           <textarea

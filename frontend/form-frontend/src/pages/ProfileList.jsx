@@ -79,11 +79,11 @@ const ProfileList = () => {
         <div className="profile-card">
           <p><strong>First Name:</strong> {profile.firstName}</p>
           <p><strong>Last Name:</strong> {profile.lastName}</p>
-          <p><strong>Address:</strong> {profile.address}</p>
-          <p><strong>Country:</strong> {profile.country}</p>
-          <p><strong>State:</strong> {profile.state}</p>
-          <p><strong>City:</strong> {profile.city}</p>
-          <p><strong>Pincode:</strong> {profile.pincode}</p>
+          <p><strong>Email:</strong> {profile.email}</p>
+          <p><strong>Phone:</strong> {profile.phonenumber}</p>
+          <p><strong>Address:</strong> 
+            {`${profile.address}, ${profile.city}, ${profile.state}, ${profile.country}, ${profile.pincode}`}
+          </p>
           <p><strong>Height:</strong> {profile.height} cm</p>
           <p><strong>Weight:</strong> {profile.weight} kg</p>
           <button

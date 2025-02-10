@@ -19,9 +19,16 @@ export class Profile extends Document {
 
   @Prop({ required: true })
   address: string;
+  @Prop({ required: true })
+  email: string;
+  
+  @Prop({ required: true })
+  phonenumber: string;
 
   @Prop({ required: true })
   country: string;
+  @Prop({ required: true })
+  state: string;
 
   @Prop({ required: true })
   city: string;
