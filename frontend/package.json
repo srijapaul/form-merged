@@ -1,0 +1,10 @@
+
+{
+  "scripts": {
+    
+    "build:css": "npx tailwindcss build src/index.css -o dist/output.css"
+  },
+  "devDependencies": {
+    
+  }
+}
